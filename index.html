@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Storage System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#groceries">Groceries</a></li>
+            <li><a href="#monthlies">Monthlies</a></li>
+            <li><a href="#electrical">Electrical</a></li>
+            <li><a href="#money">Monthly Money Usage</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to your home storage system. Keep track of all your groceries, monthly needs, electrical items, and money usage.</p>
+    </section>
+
+    <section id="groceries">
+        <h2>Groceries</h2>
+        <table id="groceriesTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="button-container">
+            <button onclick="addGrocery()">Add Grocery</button>
+        </div>
+    </section>
+
+    <section id="monthlies">
+        <h2>Monthlies</h2>
+        <table id="monthliesTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="button-container">
+            <button onclick="addMonthly()">Add Monthly</button>
+        </div>
+    </section>
+
+    <section id="electrical">
+        <h2>Electrical</h2>
+        <table id="electricalTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="button-container">
+            <button onclick="addElectrical()">Add Electrical</button>
+        </div>
+    </section>
+
+    <section id="money">
+        <h2>Monthly Money Usage</h2>
+        <table id="moneyTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <th id="totalCost">0</th>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="button-container">
+            <button onclick="addMoneyUsage()">Add Expense</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
